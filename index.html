@@ -6,9 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./assets/icon.png">
-    <title>APOD</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./script.js" defer></script>
+    <title>APOD - NASA</title>
 </head>
 <body>
-    
+    <!-- header -->
+    <header>
+    <h1>Astronomy Picture Of the Day</h1>
+    </header>
+  
+    <!-- descrição -->
+    <section class="subtítulo">
+        <h3>Selecione uma data e veja o astro do dia!</h3>
+    </section>
+  
+    <!--  formulário  -->
+    <section class="formulário">
+
+    <form id="formInput">
+        <input type="date" name="data" id="data" min="1995-06-20" required>
+        <button>
+            Selecionar
+        </button>
+    </form>
+    </section>
+
+    <!-- APOD -->
+    <main id="description">
+        <h1 id="titulo"></h1>
+        <p id="texto"></p>
+
+        <img id="imagem"src="">
+        <iframe id="video" src=""></iframe>
+
+    </main>
+
+    <section id="erro">Entrada inválida</section>
+
+<footer> Copyright © 2022 | Desenvolvido por Bruna Xavier </footer>
 </body>
 </html>

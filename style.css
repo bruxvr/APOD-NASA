@@ -1,0 +1,9 @@
+#imagem, #video {
+    width: 500;
+    height: 500px; 
+    display: none; 
+}
+
+body section #erro {
+    display: none;
+}
