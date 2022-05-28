@@ -1,4 +1,28 @@
-#imagem, #video {
+* {
+    font-family: 'Dosis', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, #24246A, #6971BF, #A86776, #E39165, #EE8748 );
+    background-size: 300%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    animation: colors 9s ease infinite;
+}
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body main #imagem, #video {
     width: 500;
     height: 500px; 
     display: none; 
@@ -7,3 +31,4 @@
 body section #erro {
     display: none;
 }
+

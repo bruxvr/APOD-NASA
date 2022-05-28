@@ -36,7 +36,14 @@ $.ajax({
         }, 
         
         error: function(){
-           console.log('error')
+            video.css('display', 'none')
+            imagem.css('display', 'none')
+            erro.css('display', 'block')
+            titulo.css('display', 'none')
+            texto.css('display', 'none')
+            texto.html(`${consultaApi.explanation}`)
+            
+            
         }
 })
 }
