@@ -13,20 +13,18 @@ body {
     background: #000207;
 }
 
-body .principal {
-    display: flex;
-}
-
-body .box {
-    flex-direction: column;
-    width: 50%;
-
-}
-
 main {
     display: flex;
     padding: 50px;
 }
+
+body .box {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-self: center;
+}
+
 
 body main #titulo {
     text-align: center;
@@ -48,6 +46,14 @@ body #imagem, #video {
 
 body #erro {
     display: none;
+}
+
+body input {
+    color:#000207;
+}
+
+body button {
+    color:#000207;
 }
 
 footer {
