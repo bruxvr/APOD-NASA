@@ -1,34 +1,70 @@
 * {
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+    
 }
 
 body {
-    background-image: linear-gradient(to bottom right, #24246A, #6971BF, #A86776, #E39165, #EE8748 );
-    background-size: 300%;
+    background-size: 100%;
+    background: cover;
     text-align: center;
     align-items: center;
     justify-content: center;
-    animation: colors 9s ease infinite;
-}
-@keyframes colors {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+    background: #000207;
 }
 
-body main #imagem, #video {
-    width: 500;
-    height: 500px; 
+body .principal {
+    display: flex;
+}
+
+body .box {
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    padding: 50px;
+}
+
+
+body #imagem, #video {
+    width: 400px;
+    height: 400px; 
     display: none; 
 }
 
-body section #erro {
+body #erro {
     display: none;
 }
 
+footer {
+    display: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: #000207;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

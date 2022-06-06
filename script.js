@@ -4,6 +4,7 @@ let video = $('#video')
 let titulo = $('#titulo')
 let texto = $('#texto')
 let erro = $('#erro')
+let imgInicial =$('#img-inicial')
 let data;
 
 
@@ -16,6 +17,8 @@ $.ajax({
         erro.css('display', 'none')
         titulo.css('display', 'block')
         titulo.html(`${consultaApi.title}`)
+        imgInicial.css('display', 'none')
+
 
         if (consultaApi.media_type == 'image') {
             imagem.css('display', 'block')
