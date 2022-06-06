@@ -5,6 +5,7 @@ let titulo = $('#titulo')
 let texto = $('#texto')
 let erro = $('#erro')
 let imgInicial =$('#img-inicial')
+let desc = $('#description')
 let data;
 
 
@@ -18,6 +19,7 @@ $.ajax({
         titulo.css('display', 'block')
         titulo.html(`${consultaApi.title}`)
         imgInicial.css('display', 'none')
+        desc.css('display', 'block')
 
 
         if (consultaApi.media_type == 'image') {

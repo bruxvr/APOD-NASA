@@ -19,6 +19,8 @@ body .principal {
 
 body .box {
     flex-direction: column;
+    width: 50%;
+
 }
 
 main {
@@ -26,11 +28,22 @@ main {
     padding: 50px;
 }
 
+body main #titulo {
+    text-align: center;
+}
+
+body main #description {
+    text-align: justify;
+    width: 50%;
+    display: none;
+
+}
 
 body #imagem, #video {
     width: 400px;
     height: 400px; 
     display: none; 
+    margin: auto;
 }
 
 body #erro {
