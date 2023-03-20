@@ -43,7 +43,7 @@ $.ajax({
         error: function(){
             video.css('display', 'none')
             imagem.css('display', 'none')
-            erro.css('display', 'block')
+            erro.css('display', 'center')
             titulo.css('display', 'none')
             texto.css('display', 'none')
             texto.html(`${consultaApi.explanation}`)
