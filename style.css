@@ -45,7 +45,7 @@ body #imagem, #video {
 }
 
 body #erro {
-    display: none;
+    display: block;
     text-align: center;
 }
 
