@@ -46,7 +46,7 @@ body #imagem, #video {
 
 body #erro {
     display: none;
-    text-align: center;
+    text-align: justify;
 }
 
 body input {
